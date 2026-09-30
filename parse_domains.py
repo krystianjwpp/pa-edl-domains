@@ -1,0 +1,56 @@
+import requests
+
+headers = {
+    'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
+}
+
+# The unique set to hold all merged domains without duplicates
+master_domain_set = set()
+
+# ==========================================
+# SOURCE 1: DAVIDONZO OSINT THREAT INTEL
+# ==========================================
+source_1_url = "https://githubusercontent.com"
+try:
+    response = requests.get(source_1_url, headers=headers)
+    if response.status_code == 200:
+        lines = response.text.splitlines()
+        for line in lines:
+            line = line.strip()
+            # Skip comments, HTML tags, structural JSON keys, or localhosts
+            if not line or line.startswith('#') or '{' in line or '"' in line or 'localhost' in line:
+                continue
+            
+            # Ensure it is treated purely as a domain string name
+            clean_host_check = line.replace('.', '')
+            if not clean_host_check.isdigit():
+                master_domain_set.add(line.lower())
+except Exception as e:
+    print(f"Error processing Source 1: {e}")
+
+# ==========================================
+# SOURCE 2: EMERGING THREATS OPEN BLOCKS
+# ==========================================
+source_2_url = "https://githubusercontent.com"
+try:
+    response = requests.get(source_2_url, headers=headers)
+    if response.status_code == 200:
+        lines = response.text.splitlines()
+        for line in lines:
+            line = line.strip()
+            if not line or line.startswith('#') or '{' in line or '"' in line or 'localhost' in line:
+                continue
+                
+            clean_host_check = line.replace('.', '')
+            if not clean_host_check.isdigit():
+                master_domain_set.add(line.lower())
+except Exception as e:
+    print(f"Error processing Source 2: {e}")
+
+# ==========================================
+# WRITE THE MERGED DATA TO A FLAT EDL FILE
+# ==========================================
+with open("pa-clean-domains.txt", "w") as f:
+    for domain in sorted(master_domain_set):
+        f.write(f"{domain}\n")
+print(f"Successfully processed and wrote {len(master_domain_set)} clean domains.")
