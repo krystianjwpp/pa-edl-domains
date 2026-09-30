@@ -4,7 +4,6 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
 }
 
-# The unique set to hold all merged domains without duplicates
 master_domain_set = set()
 
 # ==========================================
@@ -17,16 +16,12 @@ try:
         lines = response.text.splitlines()
         for line in lines:
             line = line.strip()
-            # Skip comments, HTML tags, structural JSON keys, or localhosts
             if not line or line.startswith('#') or '{' in line or '"' in line or 'localhost' in line:
                 continue
             
-            # Pure string extraction for port stripping
-            naked_domain = line
-            if '/' in naked_domain:
-                naked_domain = naked_domain.split('/')[0]
-            if ':' in naked_domain:
-                naked_domain = naked_domain.split(':')[0]
+            # Pure text slicing using string partition (Safe from list conversions)
+            naked_domain = line.partition('/')[0]
+            naked_domain = naked_domain.partition(':')[0]
             
             clean_host_check = naked_domain.replace('.', '')
             if not clean_host_check.isdigit() and naked_domain:
@@ -47,11 +42,8 @@ try:
             if not line or line.startswith('#') or '{' in line or '"' in line or 'localhost' in line:
                 continue
                 
-            naked_domain = line
-            if '/' in naked_domain:
-                naked_domain = naked_domain.split('/')[0]
-            if ':' in naked_domain:
-                naked_domain = naked_domain.split(':')[0]
+            naked_domain = line.partition('/')[0]
+            naked_domain = naked_domain.partition(':')[0]
                 
             clean_host_check = naked_domain.replace('.', '')
             if not clean_host_check.isdigit() and naked_domain:
