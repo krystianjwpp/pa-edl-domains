@@ -1,0 +1,30 @@
+name: Update PA Domain EDL
+on:
+  schedule:
+    - cron: '30 * * * *' # Runs automatically at minute 30 of every hour
+  workflow_dispatch: # Allows manual button click execution
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repository
+        uses: actions/checkout@v4
+
+      - name: Set up Python Engine
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.x'
+
+      - name: Install Dependencies
+        run: pip install requests
+
+      - name: Run Processing Script
+        run: python parse_domains.py
+
+      - name: Commit and Push Clean Domain List
+        run: |
+          git config --global user.name "edl-bot"
+          git config --global user.email "edl-bot@github.com"
+          git add pa-clean-domains.txt
+          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated aggregation of clean PA domains" && git push)
