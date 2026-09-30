@@ -1,8 +1,8 @@
 name: Update PA Domain EDL
 on:
   schedule:
-    - cron: '30 * * * *' # Runs automatically at minute 30 of every hour
-  workflow_dispatch: # Allows manual button click execution
+    - cron: '30 * * * *' # Runs automatically every hour
+  workflow_dispatch: # Allows manual executions via button click
 
 jobs:
   build:
@@ -11,16 +11,10 @@ jobs:
       - name: Checkout Repository
         uses: actions/checkout@v4
 
-      - name: Set up Python Engine
-        uses: actions/setup-python@v5
-        with:
-          python-version: '3.x'
-
-      - name: Install Dependencies
-        run: pip install requests
-
-      - name: Run Processing Script
-        run: python parse_domains.py
+      - name: Direct Threat Feed Sync
+        run: |
+          # Pull the raw plain text file straight into your repo
+          curl -L "https://githubusercontent.com" -o pa-clean-domains.txt
 
       - name: Commit and Push Clean Domain List
         run: |
