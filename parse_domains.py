@@ -1,10 +1,10 @@
 import requests
-import urllib.parse
 
 headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36'
 }
 
+# The unique set to hold all merged domains without duplicates
 master_domain_set = set()
 
 # ==========================================
@@ -17,20 +17,20 @@ try:
         lines = response.text.splitlines()
         for line in lines:
             line = line.strip()
+            # Skip comments, HTML tags, structural JSON keys, or localhosts
             if not line or line.startswith('#') or '{' in line or '"' in line or 'localhost' in line:
                 continue
             
-            # Use urllib to parse the string as a URL safely
-            url_to_parse = f"http://{line}" if not line.startswith(('http://', 'https://')) else line
-            parsed = urllib.parse.urlparse(url_to_parse)
+            # Pure string extraction for port stripping
+            naked_domain = line
+            if '/' in naked_domain:
+                naked_domain = naked_domain.split('/')[0]
+            if ':' in naked_domain:
+                naked_domain = naked_domain.split(':')[0]
             
-            # Safely extract the pure domain name string
-            naked_domain = parsed.hostname if parsed.hostname else line
-            
-            if naked_domain:
-                clean_host_check = naked_domain.replace('.', '')
-                if not clean_host_check.isdigit():
-                    master_domain_set.add(naked_domain.lower())
+            clean_host_check = naked_domain.replace('.', '')
+            if not clean_host_check.isdigit() and naked_domain:
+                master_domain_set.add(naked_domain.lower())
 except Exception as e:
     print(f"Error processing Source 1: {e}")
 
@@ -47,15 +47,15 @@ try:
             if not line or line.startswith('#') or '{' in line or '"' in line or 'localhost' in line:
                 continue
                 
-            url_to_parse = f"http://{line}" if not line.startswith(('http://', 'https://')) else line
-            parsed = urllib.parse.urlparse(url_to_parse)
-            
-            naked_domain = parsed.hostname if parsed.hostname else line
-            
-            if naked_domain:
-                clean_host_check = naked_domain.replace('.', '')
-                if not clean_host_check.isdigit():
-                    master_domain_set.add(naked_domain.lower())
+            naked_domain = line
+            if '/' in naked_domain:
+                naked_domain = naked_domain.split('/')[0]
+            if ':' in naked_domain:
+                naked_domain = naked_domain.split(':')[0]
+                
+            clean_host_check = naked_domain.replace('.', '')
+            if not clean_host_check.isdigit() and naked_domain:
+                master_domain_set.add(naked_domain.lower())
 except Exception as e:
     print(f"Error processing Source 2: {e}")
 
