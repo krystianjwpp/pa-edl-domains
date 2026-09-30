@@ -15,14 +15,22 @@ try:
     if response.status_code == 200:
         lines = response.text.splitlines()
         for line in lines:
-            line = line.strip()
-            if not line or line.startswith('#') or '{' in line or '"' in line or 'localhost' in line:
+            naked_domain = line.strip()
+            if not naked_domain or naked_domain.startswith('#') or '{' in naked_domain or '"' in naked_domain or 'localhost' in naked_domain:
                 continue
             
-            # Pure text slicing using string partition (Safe from list conversions)
-            naked_domain = line.partition('/')[0]
-            naked_domain = naked_domain.partition(':')[0]
+            # Pure index finding to strip trailing paths safely
+            slash_idx = naked_domain.find('/')
+            if slash_idx != -1:
+                naked_domain = naked_domain[:slash_idx]
+                
+            # Pure index finding to strip port numbers safely
+            colon_idx = naked_domain.find(':')
+            if colon_idx != -1:
+                naked_domain = naked_domain[:colon_idx]
             
+            # Drop trailing spaces and filter out direct IP addresses
+            naked_domain = naked_domain.strip()
             clean_host_check = naked_domain.replace('.', '')
             if not clean_host_check.isdigit() and naked_domain:
                 master_domain_set.add(naked_domain.lower())
@@ -38,13 +46,19 @@ try:
     if response.status_code == 200:
         lines = response.text.splitlines()
         for line in lines:
-            line = line.strip()
-            if not line or line.startswith('#') or '{' in line or '"' in line or 'localhost' in line:
+            naked_domain = line.strip()
+            if not naked_domain or naked_domain.startswith('#') or '{' in naked_domain or '"' in naked_domain or 'localhost' in naked_domain:
                 continue
                 
-            naked_domain = line.partition('/')[0]
-            naked_domain = naked_domain.partition(':')[0]
+            slash_idx = naked_domain.find('/')
+            if slash_idx != -1:
+                naked_domain = naked_domain[:slash_idx]
                 
+            colon_idx = naked_domain.find(':')
+            if colon_idx != -1:
+                naked_domain = naked_domain[:colon_idx]
+                
+            naked_domain = naked_domain.strip()
             clean_host_check = naked_domain.replace('.', '')
             if not clean_host_check.isdigit() and naked_domain:
                 master_domain_set.add(naked_domain.lower())
