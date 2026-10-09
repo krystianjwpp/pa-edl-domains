@@ -43,21 +43,20 @@ for feed_name, url in domain_sources.items():
             if not line or line.startswith('#') or line.startswith(';') or line.startswith('//') or line.startswith('!'):
                 continue
                 
-            # Split line into separate whitespace tokens
-            tokens = line.split()
+            # Safe comment stripping: split by comment marks and take the text before them
+            no_hash_comments = line.split('#')
+            clean_string = no_hash_comments[0]
+            
+            no_semicolon_comments = clean_string.split(';')
+            clean_string = no_semicolon_comments[0]
+            
+            # Split by whitespace to isolate the domain word token
+            tokens = clean_string.split()
             if not tokens:
                 continue
                 
-            # FIXED: Grab the first element as a pure string before lowercasing
+            # Convert the isolated domain string to lowercase
             domain_candidate = tokens[0].lower()
-            
-            # FIXED: Safe string-splitting using index slices to prevent list errors
-            if '#' in domain_candidate:
-                domain_candidate = domain_candidate.split('#')[0]
-            if ';' in domain_candidate:
-                domain_candidate = domain_candidate.split(';')[0]
-                
-            domain_candidate = domain_candidate.strip()
             
             # Validate format and append to unique set (automatic deduplication)
             if DOMAIN_REGEX.match(domain_candidate):
