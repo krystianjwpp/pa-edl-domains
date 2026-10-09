@@ -43,13 +43,15 @@ for feed_name, url in domain_sources.items():
             if not line or line.startswith('#') or line.startswith(';') or line.startswith('//') or line.startswith('!'):
                 continue
                 
-            # Grab the first whitespace block
+            # Split line into separate whitespace tokens
             tokens = line.split()
             if not tokens:
                 continue
+                
+            # FIXED: Grab the first element as a pure string before lowercasing
             domain_candidate = tokens[0].lower()
             
-            # FIXED: Safe, step-by-step comment splitting that never crashes on a list object
+            # FIXED: Safe string-splitting using index slices to prevent list errors
             if '#' in domain_candidate:
                 domain_candidate = domain_candidate.split('#')[0]
             if ';' in domain_candidate:
@@ -57,7 +59,7 @@ for feed_name, url in domain_sources.items():
                 
             domain_candidate = domain_candidate.strip()
             
-            # Validate format and append to unique set
+            # Validate format and append to unique set (automatic deduplication)
             if DOMAIN_REGEX.match(domain_candidate):
                 master_domain_set.add(domain_candidate)
                 feed_count += 1
@@ -65,7 +67,7 @@ for feed_name, url in domain_sources.items():
         print(f" ✅ {feed_name}: Ingested {feed_count:,} valid domains successfully.")
         
     except Exception as e:
-        print(f" ❌ Fatal error on list loop [{feed_name}]: {str(e)}")
+        print(f" ❌ Error processing {feed_name}: {str(e)}")
 
 print(f"📊 Consolidated unique domain database size: {len(master_domain_set):,} items.")
 
