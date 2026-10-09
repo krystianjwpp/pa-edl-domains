@@ -6,12 +6,13 @@ headers = {
     'User-Agent': 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36'
 }
 
+# The EXACT 5 source URLs you provided
 domain_sources = {
-    "TweetFeed Domains": "https://tweetfeed.live",
-    "CyberHost Malware": "https://cyberhost.uk",
-    "Phishing.Army Extended": "https://phishing.army",
-    "CERT.pl Domains": "https://cert.pl",
-    "Phishing-Database Active 2": "https://githubusercontent.com"
+    "TweetFeed Domains": "https://api.tweetfeed.live/v1/blocklist/domains.txt",
+    "CyberHost Malware": "https://lists.cyberhost.uk/malware.txt",
+    "Phishing.Army Extended": "https://phishing.army/download/phishing_army_blocklist_extended.txt",
+    "CERT.pl Domains": "https://hole.cert.pl/domains/v2/domains.txt",
+    "Phishing-Database Active 2": "https://raw.githubusercontent.com/Phishing-Database/Phishing.Database/refs/heads/master/phishing-domains-ACTIVE/phishing-domains-ACTIVE2.txt"
 }
 
 master_domain_set = set()
@@ -43,17 +44,21 @@ for feed_name, url in domain_sources.items():
             if not line or line.startswith('#') or line.startswith(';') or line.startswith('//') or line.startswith('!'):
                 continue
                 
-            # FIXED: Safe, step-by-step comment stripping without chaining list methods
-            clean_string = line.split('#')[0]
-            clean_string = clean_string.split(';')[0]
+            # Safe inline comment stripping using temporary string objects
+            clean_string = line
+            if '#' in clean_string:
+                clean_string = clean_string.split('#')[0]
+            if ';' in clean_string:
+                clean_string = clean_string.split(';')[0]
+                
             clean_string = clean_string.strip()
             
-            # Isolate the core domain string token out of whitespace columns
+            # Split by whitespace to grab the core domain column token
             tokens = clean_string.split()
             if not tokens:
                 continue
                 
-            # Convert the domain string securely to lowercase
+            # Convert the domain string token securely to lowercase
             domain_candidate = tokens[0].lower()
             
             # Validate format and append to unique set (automatic deduplication)
@@ -76,4 +81,4 @@ with open(output_file, "w") as f:
     for domain in sorted(master_domain_set):
         f.write(f"{domain}\n")
 
-print(f"✅ Success! Generated master domain file with {len(master_domain_set)} records.")
+print(f"✅ Success! Generated master domain file with {len(master_domain_set):,} records.")
