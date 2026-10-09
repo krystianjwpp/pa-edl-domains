@@ -1,24 +1,35 @@
-name: Update PA Domain EDL
+name: Update Firewall Domain Threat Feeds
+
 on:
   schedule:
-    - cron: '30 * * * *' # Runs automatically every hour
-  workflow_dispatch: # Allows manual executions via button click
+    - cron: '0 * * * *'  # Runs automatically at the top of every hour
+  workflow_dispatch:     # Allows manual trigger
+
+permissions:
+  contents: write        # Required to save file modifications back into main branch
 
 jobs:
-  build:
+  build-and-commit:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Code Repository
         uses: actions/checkout@v4
 
-      - name: Direct Threat Feed Sync
-        run: |
-          # Pull the raw plain text file straight into your repo
-          curl -L "https://githubusercontent.com" -o pa-clean-domains.txt
+      - name: Set up Python Environment
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
 
-      - name: Commit and Push Clean Domain List
+      - name: Install Request Modules
+        run: pip install requests
+
+      - name: Run Domain Clean Script
+        run: python parse_domains.py
+
+      - name: Commit and Push File Directly to Main
         run: |
-          git config --global user.name "edl-bot"
-          git config --global user.email "edl-bot@github.com"
+          git config --local user.email "github-actions[bot]@://github.com"
+          git config --local user.name "github-actions[bot]"
           git add pa-clean-domains.txt
-          git diff --quiet && git diff --staged --quiet || (git commit -m "Automated aggregation of clean PA domains" && git push)
+          git commit -m "Automated update of Domain master blocklist" || echo "No changes to commit"
+          git push origin HEAD:main
