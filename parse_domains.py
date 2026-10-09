@@ -43,11 +43,11 @@ for feed_name, url in domain_sources.items():
             if not line or line.startswith('#') or line.startswith(';') or line.startswith('//') or line.startswith('!'):
                 continue
                 
-            # Bulletproof comment stripping: splits line and takes everything before the comment flag
-            clean_string = line.split('#')[0].split(';')[0].strip()
-            if not clean_string:
-                continue
-                
+            # FIXED: Safe, step-by-step comment stripping without chaining list methods
+            clean_string = line.split('#')[0]
+            clean_string = clean_string.split(';')[0]
+            clean_string = clean_string.strip()
+            
             # Isolate the core domain string token out of whitespace columns
             tokens = clean_string.split()
             if not tokens:
@@ -76,4 +76,4 @@ with open(output_file, "w") as f:
     for domain in sorted(master_domain_set):
         f.write(f"{domain}\n")
 
-print(f"✅ Success! Generated master domain file with {len(master_domain_set):?} records.")
+print(f"✅ Success! Generated master domain file with {len(master_domain_set)} records.")
