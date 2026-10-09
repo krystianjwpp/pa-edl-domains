@@ -43,19 +43,17 @@ for feed_name, url in domain_sources.items():
             if not line or line.startswith('#') or line.startswith(';') or line.startswith('//') or line.startswith('!'):
                 continue
                 
-            # Safe comment stripping: split by comment marks and take the text before them
-            no_hash_comments = line.split('#')
-            clean_string = no_hash_comments[0]
-            
-            no_semicolon_comments = clean_string.split(';')
-            clean_string = no_semicolon_comments[0]
-            
-            # Split by whitespace to isolate the domain word token
+            # Bulletproof comment stripping: splits line and takes everything before the comment flag
+            clean_string = line.split('#')[0].split(';')[0].strip()
+            if not clean_string:
+                continue
+                
+            # Isolate the core domain string token out of whitespace columns
             tokens = clean_string.split()
             if not tokens:
                 continue
                 
-            # Convert the isolated domain string to lowercase
+            # Convert the domain string securely to lowercase
             domain_candidate = tokens[0].lower()
             
             # Validate format and append to unique set (automatic deduplication)
@@ -78,4 +76,4 @@ with open(output_file, "w") as f:
     for domain in sorted(master_domain_set):
         f.write(f"{domain}\n")
 
-print(f"✅ Success! Generated master domain file with {len(master_domain_set):,} records.")
+print(f"✅ Success! Generated master domain file with {len(master_domain_set):?} records.")
