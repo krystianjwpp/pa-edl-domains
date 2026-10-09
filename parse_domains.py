@@ -16,8 +16,7 @@ domain_sources = {
 
 master_domain_set = set()
 
-# A robust Regex that strictly matches a valid Domain/FQDN structure:
-# Allows numbers, letters, dashes, and dots. Rejects HTML, JS, braces, quotes, or JSON data.
+# Matches valid domains/FQDNs and discards HTML tags, JSON formatting, brackets, or code snippets
 DOMAIN_REGEX = re.compile(r'^[a-zA-Z0-9][-a-zA-Z0-9_]{0,62}(\.[a-zA-Z0-9][-a-zA-Z0-9_]{0,62})+$')
 
 print("🚀 Starting Master Domain Threat Intelligence Aggregation...")
@@ -31,7 +30,7 @@ for feed_name, url in domain_sources.items():
             
         # Stop landing page contamination right at the threshold
         if "text/html" in response.headers.get("Content-Type", "").lower() or "<html" in response.text[:2000].lower():
-            print(f" ❌ Security Warning: {feed_name} returned an HTML block page. Skipping to protect feed data.")
+            print(f" ❌ Security Warning: {feed_name} returned an HTML block page. Skipping.")
             continue
             
         lines = response.text.splitlines()
@@ -40,20 +39,25 @@ for feed_name, url in domain_sources.items():
         for line in lines:
             line = line.strip()
             
-            # Skip documentation, comments, empty rows, or adblock style meta definitions
+            # Skip documentation, comments, or adblock meta rows
             if not line or line.startswith('#') or line.startswith(';') or line.startswith('//') or line.startswith('!'):
                 continue
                 
-            # Tokenize row contents by any whitespace block to extract the bare domain token
+            # Grab the first whitespace block
             tokens = line.split()
             if not tokens:
                 continue
-            domain_candidate = tokens.lower()
+            domain_candidate = tokens[0].lower()
             
-            # Remove any trailing inline comment parts if present (e.g., 'domain.com # Malicious')
-            domain_candidate = domain_candidate.split('#').split(';')[0].strip()
+            # FIXED: Safe, step-by-step comment splitting that never crashes on a list object
+            if '#' in domain_candidate:
+                domain_candidate = domain_candidate.split('#')[0]
+            if ';' in domain_candidate:
+                domain_candidate = domain_candidate.split(';')[0]
+                
+            domain_candidate = domain_candidate.strip()
             
-            # Validate the candidate strictly using the Domain Regex
+            # Validate format and append to unique set
             if DOMAIN_REGEX.match(domain_candidate):
                 master_domain_set.add(domain_candidate)
                 feed_count += 1
@@ -61,11 +65,11 @@ for feed_name, url in domain_sources.items():
         print(f" ✅ {feed_name}: Ingested {feed_count:,} valid domains successfully.")
         
     except Exception as e:
-        print(f" ❌ Error processing {feed_name}: {str(e)}")
+        print(f" ❌ Fatal error on list loop [{feed_name}]: {str(e)}")
 
 print(f"📊 Consolidated unique domain database size: {len(master_domain_set):,} items.")
 
-# Save directly to the current working directory root so git can find it
+# Save directly to the current working directory root so git can commit it
 base_dir = os.path.dirname(os.path.abspath(__file__))
 output_file = os.path.join(base_dir, "pa-clean-domains.txt")
 
