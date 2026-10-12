@@ -48,7 +48,7 @@ for feed_name, url in domain_sources.items():
             if not line or line.startswith(('#', ';', '//', '!')):
                 continue
                 
-            # FIXED: Correctly tracking elements by slicing the split lists to keep them as strings
+            # FIXED: Correct string index slicing prevents strings from getting stuck as arrays
             clean_string = line
             if '#' in clean_string:
                 clean_string = clean_string.split('#')[0]
@@ -60,7 +60,7 @@ for feed_name, url in domain_sources.items():
             if not tokens:
                 continue
                 
-            # FIXED: Target the first string token inside the list before modifying case
+            # FIXED: Extracting the string element explicitly before lowercasing
             domain_candidate = tokens[0].lower()
             
             # 1. PAN-OS Constraint Validation: Enforce maximum domain length of 255 characters
