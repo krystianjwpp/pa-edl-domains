@@ -48,6 +48,7 @@ for feed_name, url in domain_sources.items():
             if not line or line.startswith(('#', ';', '//', '!')):
                 continue
                 
+            # SECURE INLINE COMMENT STRIPPING (Extracts only the target domain token before character delimiters)
             clean_string = line
             if '#' in clean_string:
                 clean_string = clean_string.split('#')[0]
@@ -59,9 +60,10 @@ for feed_name, url in domain_sources.items():
             if not tokens:
                 continue
                 
+            # FIXED: Correctly targeting the first string token index before lowering
             domain_candidate = tokens[0].lower()
             
-            # 1. PAN-OS Constraint Validation: Enforce maximum string length of 255 characters
+            # 1. PAN-OS Constraint Validation: Enforce maximum domain length of 255 characters
             if len(domain_candidate) > 255:
                 continue
                 
