@@ -14,13 +14,12 @@ domain_sources = {
     "Phishing-Database Active 2": "https://githubusercontent.com"
 }
 
-# Core infrastructure base domains that should NEVER be blocked entirely
 CLOUD_INFRASTRUCTURE_WHITELIST = {
     "amazonaws.com",
     "ionoscloud.com",
     "retrospectcloud.com",
     "googleusercontent.com",
-    "windows.net"  # Protects Azure base services
+    "windows.net"
 }
 
 raw_domain_set = set()
@@ -48,33 +47,27 @@ for feed_name, url in domain_sources.items():
             if not line or line.startswith(('#', ';', '//', '!')):
                 continue
                 
-            # Safely split and extract string tokens using explicit index elements
-            clean_string = line
-            if '#' in clean_string:
-                clean_string = clean_string.split('#')[0]
-            if ';' in clean_string:
-                clean_string = clean_string.split(';')[0]
-                
+            # FIXED: Uses partition() to safely split off inline comments without index brackets
+            clean_string, separator, comment = line.partition('#')
+            clean_string, separator, comment = clean_string.partition(';')
+            
             clean_string = clean_string.strip()
             tokens = clean_string.split()
             if not tokens:
                 continue
                 
-            # Isolate the first string element safely
-            domain_candidate = tokens[0].lower()
+            # FIXED: Uses next() iterator to safely pull the first domain string token without index brackets
+            token_iterator = iter(tokens)
+            domain_candidate = next(token_iterator).lower()
             
-            # 1. PAN-OS Constraint Validation: Enforce maximum domain length of 255 characters
             if len(domain_candidate) > 255:
                 continue
                 
             if DOMAIN_REGEX.match(domain_candidate):
-                # 2. Advanced Cloud Infrastructure Safeguard Filter
                 is_whitelisted = False
                 for allowed_base in CLOUD_INFRASTRUCTURE_WHITELIST:
                     if domain_candidate == allowed_base or domain_candidate.endswith("." + allowed_base):
                         parts = domain_candidate.split('.')
-                        # Length Boundary Rule: Only skip if it's the raw platform endpoint (<= 4 tokens)
-                        # Explicit customer-owned malicious buckets (>= 5 tokens) pass straight through to be blocked
                         if len(parts) <= 4:
                             is_whitelisted = True
                             break
@@ -94,7 +87,6 @@ for feed_name, url in domain_sources.items():
 print(f"📊 Extracted unique raw tokens: {len(raw_domain_set):,} items.")
 print("✂️ Optimizing database with Palo Alto hierarchical domain deduction logic...")
 
-# 3. Hardware Capacity Optimization: Sort list by length to evaluate parent domains before deep subdomains
 sorted_domains = sorted(list(raw_domain_set), key=len)
 optimized_domains = set()
 
@@ -102,7 +94,6 @@ for domain in sorted_domains:
     parts = domain.split('.')
     is_subdomain_blocked = False
     
-    # Climb up the zone tree (e.g., for ://bad.com, check bad.com then com)
     for i in range(1, len(parts)):
         parent_candidate = ".".join(parts[i:])
         if parent_candidate in optimized_domains:
@@ -115,7 +106,6 @@ for domain in sorted_domains:
 final_count = len(optimized_domains)
 print(f"📊 Consolidated explicit Palo Alto EDL size: {final_count:,} items.")
 
-# Verify final size against platform capabilities (PA-440 supports up to 1,000,000 across lists)
 if final_count > 1000000:
     print(f" ⚠️ CRITICAL WARNING: Total domains ({final_count:,}) exceed your maximum PA-440 platform EDL capacity threshold!")
 else:
