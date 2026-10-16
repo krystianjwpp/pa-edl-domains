@@ -6359,6 +6359,7 @@ a-unclick.net
 a-virus.adware.msil.browsefox.bkkj
 a-virus.adware.msil.ocna.apg
 a-virus.adware.win32.eorezo.fjbq
+a-virus.downloader.win32.agent.ibnt
 a-virus.downloader.win32.agent.kupe
 a-virus.downloader.win32.downloadhelper.dcx
 a-virus.downloader.win32.morstar
@@ -6645,7 +6646,6 @@ aapu.at
 aarambhband-dev.github.io
 aaranlodge.com
 aarchacking.zapto.org
-aaroensol-smbice.com
 aarondc.com
 aaronjaykernis.com
 aaronnihat.com
@@ -9693,6 +9693,7 @@ ainet.cn
 ainewpro.top
 ainewtrading.xyz
 ainex-edge-platform.com
+ainfnow.cn
 aingular.com
 ainml.io
 ainovatarde.net
@@ -12804,6 +12805,7 @@ allassuttr.cyou
 allattitil.cyou
 allautopartsplanets.com
 allbaba-cn-tradecenter.up.railway.app
+allbeachtravel.com
 allbetgame.bet
 allbio.link
 allbirdswrold.top
@@ -14569,6 +14571,7 @@ allegrolokalnie.lokalna-ofeta981829.sbs
 allegrolokalnie.lokalna-ofeta9827818.sbs
 allegrolokalnie.lokalna-ofeta992.sbs
 allegrolokalnie.lokalna1.sbs
+allegrolokalnie.lokalna4120499.cfd
 allegrolokalnie.lokalna412955.cfd
 allegrolokalnie.lokalna7809429.sbs
 allegrolokalnie.lokalne-ofeta7927.cfd
@@ -14659,6 +14662,7 @@ allegrolokalnie.oferta-lokalna6192305.cfd
 allegrolokalnie.oferta-lokalna68349242314.top
 allegrolokalnie.oferta-lokalna854925235113.sbs
 allegrolokalnie.oferta-lokalnie-pl.cfd
+allegrolokalnie.oferta-lokalnie-pl.sbs
 allegrolokalnie.oferta-na-lato-2026-4rkgevk.sbs
 allegrolokalnie.oferta-na-lato-2026-i45hgk.sbs
 allegrolokalnie.oferta-na-lato-2026-o35kgkrv.sbs
@@ -14975,6 +14979,7 @@ allegrolokalnie.ogloszenie-19339462-dla-ciebie.lat
 allegrolokalnie.ogloszenie0999197826727214.shop
 allegrolokalnie.ogloszenie1008475901.cyou
 allegrolokalnie.ogloszenie12543746-z-dostawa.sbs
+allegrolokalnie.ogloszenie1281201.sbs
 allegrolokalnie.ogloszenie129012.shop
 allegrolokalnie.ogloszenie168192.sbs
 allegrolokalnie.ogloszenie172910.sbs
@@ -16499,7 +16504,6 @@ alphaindustries-us.shop
 alphainsulationsmelbourne.com.au
 alphakitrade.de
 alphakron.com
-alphamedglobal.com
 alphamerkur.com
 alphamovix-7.com
 alphamovix-system.com
@@ -17591,7 +17595,6 @@ anciate.tech
 anciedisin.cyou
 ancient-pipe.com
 ancientcloudforge.digital
-ancientcpus-jprakutansui-copoint.com
 ancientcresthaven.digital
 ancientharborpath.info
 ancientmoonworks.digital
@@ -20288,6 +20291,7 @@ arontradeai.live
 arontradeai.org
 aronzvi.com
 aroqui.com
+aroqwxh.cn
 arorix.site
 arosavvin.store
 arosia.net
@@ -21677,6 +21681,7 @@ atwiturono.click
 atwznkj.com
 atxa.top
 atxu.cn
+atyabalsheikh.store
 au-chan.shop
 au-logon-login-page.group
 au-osteopath.com
@@ -22844,7 +22849,6 @@ averoza.shop
 aversprobl.cyou
 avertronaitrade.com
 avertyh.icu
-averygruckus-jprakutansui-copoint.com
 averygurr.mooo.com
 avex-pro-20.live
 avexiswealth.com
@@ -23420,6 +23424,7 @@ azkudri.shop
 azmaliyet.com
 azmepakistan.tv
 azmodelsearch.com
+azocnrq.cn
 azojwdsj.xinchaoshan.com
 azonem.site
 azonnalidvezon9p.com
@@ -25137,6 +25142,7 @@ bargaincitypl.shop
 bargainfurn.com
 bargainninja.online
 bargainninja.shop
+bargainnygroandjwk.shop
 bargainrain.com
 bargainservice.online
 bargainza.shop
@@ -26946,7 +26952,6 @@ beylikduzupff.com
 beymtv.co
 beyoga-ai.com
 beyond-space.base44.app
-beyondfitness.com.br
 beyondlabelsrva.com
 beyondtechreport.com
 beyondthenorth.com
@@ -27105,6 +27110,7 @@ bhdjujfv.onrender.com
 bhdlogi17.weebly.com
 bhdwebpage.vercel.app
 bheesgd.shop
+bhexfwo.cn
 bhfaj.com
 bhfce.com
 bhfgtrns-js.beer
@@ -31609,6 +31615,7 @@ brasilrendagpt.pro
 brasitrapp.cyou
 braskel.shop
 brasko.shop
+brasku.shop
 braskudreve.com
 brass-moon.com
 brass-sneakers.shop
@@ -33547,6 +33554,7 @@ bteemail.durablesites.com
 bteeonlineupdate.blogspot.com
 bteesecureauthentication.weebly.com
 btemailauthh.weebly.com
+btexiws.cn
 btfns.co
 btfvau.cn
 btfy.io
@@ -33883,7 +33891,6 @@ buluticgiyim.net
 buluticgiyim.online
 buluticgiyim.org
 buluttur.com
-bulwasandburg-jprakutansui-copoint.com
 bulzaro.shop
 bumaro.shop
 bumbalassa.cyou
@@ -41292,6 +41299,7 @@ cnm.mutao.in
 cnmlgccl.shop
 cnmllcbdcl.shop
 cnn-africa.co
+cnn.office-on-the.net
 cnn9001.duckdns.org
 cnnahta.shop
 cnns.io
@@ -47192,8 +47200,6 @@ daptonerecordsppcgp.com
 daptonerecordspromohub.com
 daptonerecordspromotions.com
 daptonespace.com
-daqianzib-rakunde.com
-daqianzib-smbice.com
 daqmiri.shop
 daqpifru.shop
 dar-kapitent-ai.com
@@ -49490,7 +49496,6 @@ devilboydevilhere.strangled.net
 devilledesign.com.br
 devilnfc.com
 devilxclusive.lol
-devin-us.com
 devindownham.com
 devioassed.store
 devipsale.com
@@ -51063,8 +51068,6 @@ disvipalme.rest
 disvipreap.cyou
 disvosmerd.store
 disyyenthralpygmyisms.info
-ditankaofa-rakunde.com
-ditankaofan-jprakutansui.com
 diteginter.cyou
 ditenyeku.autos
 ditgai69.net
@@ -51240,6 +51243,7 @@ dk012zmi757.cyou
 dk034.com
 dk034moda.com
 dk034textil.com
+dk039ing4m84fzg.top
 dk039pix742.cyou
 dk081xq624op.cyou
 dk1092nzxy839.cyou
@@ -51533,7 +51537,6 @@ dnsprotector.net
 dnsresolver.online
 dnstvplus.pl
 dnsvalleoct.con-ip.com
-dnswwt.club
 dnsys.tech
 dntds.shop
 dntemert.cyou
@@ -51699,7 +51702,6 @@ doctmoude.firebaseapp.com
 doctmoude.web.app
 docto-rembourse-moi.com
 docto-remboursement-aide.com
-doctoaezrw-smbice.com
 doctolib-aides.com
 doctoracristinachacon.com
 doctorbahmani.com
@@ -52589,7 +52591,6 @@ downadup.streamforeste
 downadup.twosisterstubes.co
 downfieldgoods.eu
 downgradeproduct.com
-downin.club
 downld.net
 download-78-864.archivo-dfa9c26218330.xhtml
 download-app-pc.com
@@ -53966,7 +53967,6 @@ dropper.win32.agent.hgtk
 dropper.win32.agent.hkve
 dropper.win32.agent.irol
 dropper.win32.agent.kz
-dropper.win32.agent.nl
 dropper.win32.agent.nrpu
 dropper.win32.agent.ol
 dropper.win32.agent.qfy
@@ -54708,7 +54708,6 @@ durimie.pro
 duringapricot.cfd
 durlonsealingsolutions.com
 durmeliara.info
-durnakphotography.com
 durnanakliyat.com
 durnavik.cfd
 duronbondorplatform.de
@@ -59040,6 +59039,7 @@ escalatefud.duckdns.org
 escalation-bucket-5986523902.s3-website.us-east-2.amazonaws.com
 escalierspatrimoine.com
 escanor2022.linkpc.net
+escapeai.live
 escapeelements.com
 escapefromtarkov.weebly.com
 escaperoomhub.com
@@ -65379,6 +65379,7 @@ finzy3-ducimus1.sbs
 finzy3-est22.sbs
 finzy3-exercitationem93.sbs
 finzy3-expedita73.sbs
+finzy3-fugit84.sbs
 finzy3-harum74.sbs
 finzy3-illo39.sbs
 finzy3-illum27.sbs
@@ -67874,6 +67875,7 @@ fluid-footprint-036602.framer.app
 fluid-tank.com
 fluidarthub.com
 fluidcapital.com
+fluidethiopiadigital.info
 fluidfxlive.com
 fluidlink.io
 fluidrecon.cyou
@@ -75839,6 +75841,7 @@ gradagimnastica.com
 gradecert.org
 gradegillo.online
 gradetee.top
+gradidista.store
 gradientstitch.com
 gradmasterov.art
 graduatefashionfestival.com
@@ -77815,7 +77818,6 @@ haidao10.top
 haidd.co.uk
 haidw.de
 haiersi.com
-haieryunsh-rakunde.com
 haifengfoods.com
 haiirtshorns.info
 haikana.io
@@ -82119,8 +82121,6 @@ hui-42842.eu.cc
 hui228.ru
 hui4tbh9uv9x4yi.xyz
 huiakdjoadidaoaskoadd.site
-huibaoshe-smbice.com
-huibaoshen-rakunde.com
 huichuanggd.com
 huileouedsouss.com
 huiniyanotr.com
@@ -84530,6 +84530,7 @@ impaspreme.store
 impecdrapp.cyou
 impecscomb.store
 impedcappe.store
+impedvangh.store
 impelinter.store
 impeloter.xyz
 impend-differ.biz
@@ -85824,7 +85825,6 @@ innocreed.com
 innocuoyyusnesssloshed.info
 innodoanythingoty.weebly.com
 innomatic.io
-innosoft.ro
 innotech-development.com
 innova-trading-tech.com
 innova-uy.info
@@ -89609,7 +89609,6 @@ jiofiberoffer.com
 jioikldioadiosfisofifa.site
 jiolatest.vercel.app
 jiolsjkas.lat
-jiongryturte-rakunde.com
 jiopoaodioadidoida.site
 jioposawerikodfko.site
 jira.safesecurityfrour
@@ -89844,6 +89843,7 @@ jnrteks.com
 jnssebvrwn.com
 jnswsc.com
 jntct.com
+jntls.publicvm.com
 jntqdns.es
 jnvfywgscznzg.firebaseapp.com
 jnvfywgscznzg.web.app
@@ -93672,6 +93672,7 @@ kivazyu.pro
 kivento.shop
 kiverba.icu
 kivex.shop
+kivoradigitallab.online
 kivrakkreditova.com
 kiw69trade.com
 kiwghjgwud.localto.net
@@ -94343,7 +94344,6 @@ knipetarn.com
 knipetarnestate.com
 knitinghelp.com
 knitmode.store
-knittedjack-smbice.com
 knittedscarves.net
 knittingquilter.blogspot.com
 knizka.mom
@@ -94477,7 +94477,6 @@ kogensilvast.com
 kogent.io
 kogsberg.com
 koh4congress.com
-kohenalexander.screenconnect.com
 kohi.mom
 kohjguj.ydns.eu
 kohkypeht-nugopac.co.com
@@ -97241,6 +97240,7 @@ lazienkaplus.top
 lazietoton.autos
 lazoganancio.net
 lazpokiland.ddnsfree.com
+lazqivo.shop
 lazqoecu.shop
 lazt.online
 lazuraa.ddns.net
@@ -99885,6 +99885,7 @@ livecasinodealer.co
 livecdn.plasmic.run
 livecockfighting.live
 liveconnectfix.com
+livecricketscore.tv
 livecup.se
 livedailydesk.xyz
 livedailynews.xyz
@@ -100337,6 +100338,8 @@ lnstagramcom572.github.io
 lnstagrarn.vercel.app
 lnsygjswxx.com
 lntercity.cfd
+lntercity.eu.cc
+lntercity.us.cc
 lnteria.icu
 lnteria.top
 lntrtsien.icu
@@ -104411,7 +104414,6 @@ mandara-cats.at
 mandarinfranchise.com
 mandaringarden.com.vn
 mandarinlatino.com
-mandasirika-smbice.com
 mandatoryhotel.com
 mandavanis.cyou
 mandelaroyals.com
@@ -108948,7 +108950,6 @@ mjbopolstle.firebaseapp.com
 mjbopolstle.web.app
 mjddjdksjd.blogspot.com
 mjdoook.ru
-mjdou.vip
 mjf3-7m1q-k1g77-pi2vn6-gshs.pages.dev
 mjg1.ru
 mjgroup-pl.my.canva.site
@@ -111139,7 +111140,6 @@ multiport.shop
 multipropositolosandes.com
 multiresolvewallet.pages.dev
 multisafesolutions.com
-multistore-lb.com
 multisyyport.life
 multitools-eusale.shop
 multitools.cloud
@@ -114056,7 +114056,6 @@ netflix-za.com
 netflix.fedekiko.com
 netflix.gafiatechnologies.com
 netflix.gr.com
-netflix.patelrudra.in
 netflix.surf
 netflix.vpnuse.eu.org
 netflix520.com
@@ -122191,7 +122190,6 @@ onvym.com
 onwebcall.us
 onx.la
 onxba.com
-ony.srb.temporary.site
 onychophoddran.guru
 onychyyophorans.info
 onyiho.com
@@ -128174,7 +128172,6 @@ pfeiffervacuum.net
 pfestival.tw
 pffb.org.pk
 pffffer.icu
-pfflzcifes-smbice.com
 pfhmg.com
 pfiredlcapt.lovable.app
 pfitah.cn
@@ -134758,7 +134755,6 @@ primoweb.com
 primrosefield.eu
 prims-espaces.com
 primsoc.com
-primstabn.info
 primus-service.mom
 primusext.pro
 primvista.shop
@@ -137937,7 +137933,6 @@ pub-e12a8e3c69af49e99d0c9cc39be1f1b4.r2.dev
 pub-e13a6447517944d5a47c49d0ed53f83f.r2.dev
 pub-e14ddeed1e5e4daaadd197a5b9583a16.r2.dev
 pub-e1d34e0784194efbada487da7667e08a.r2.dev
-pub-e1d9577cada440b39dc4a1e0fa09e7bc.r2.dev
 pub-e1e4d0b4665d4d8996bf04516d898fb2.r2.dev
 pub-e1f1ecbe314343b0a15aaa21a61c05cf.r2.dev
 pub-e2057f5c9c714eb990f30c872299c2fa.r2.dev
@@ -139174,7 +139169,6 @@ qdtqq.cn
 qdwanlizhong.com
 qdwhc.com
 qdxianshang.cn
-qdxinruiya-smbice.com
 qdyey.com
 qe.bonduccodline.com
 qeadiuneraose.pro
@@ -142459,7 +142453,6 @@ rc.raresoft.net
 rc.svtt.top
 rc.szpd.info
 rc.tombesedated.shop
-rc.veyosilk.com
 rc.vpix.top
 rc.vxpd.info
 rc.xlit.top
@@ -145702,7 +145695,6 @@ ringrravvo.cyou
 ringrtramu.online
 ringtonesong.mob
 ringxsales.shop
-rinitiative.org
 rinnapodol.cyou
 rinnaredam.cyou
 rinnasmalt.store
@@ -147322,7 +147314,6 @@ roy-691.pages.dev
 roy-mollenkamp.com
 roy0910c.wixsite.com
 roy689.github.io
-roya-dev.com
 royabeautysalon.com
 royal-byntexsoftware.com
 royal-kapithorne-uk.online
@@ -154001,14 +153992,11 @@ sb-opnlb.vercel.app
 sb-pahiuh.vercel.app
 sb-srre.vercel.app
 sb.acoountszx.com
-sb.anaridelight.com
 sb.arnicagrace.com
-sb.celocozy.com
 sb.firefly8.link
 sb.mivoefocus.com
 sb.rowlandpodogyn.shop
 sb.saibo789.cc
-sb.zeyoluxe.com
 sb0002.blogspot.com
 sb13-1cvp.vercel.app
 sb24mali.com
@@ -155360,9 +155348,7 @@ se-muhammad-shamoil.github.io
 se-sand.vercel.app
 se.chickenroadstarfall.info
 se.jurikozian.shop
-se.kivokeyline.com
 se.kuashouban.com
-se.nsbpay.com
 se.sanskeeoncarput.org
 se1.petsgourmet.it
 se2.petsgourmet.it
@@ -159389,7 +159375,6 @@ shenproperties.com
 shenshirt.com
 shentu750.com
 shenyac.cyou
-shenzhenm-jprakutansui.com
 shenzhenmk-jp.com
 shenzhenyingci.com
 shepherdlyopzc.shop
@@ -160276,7 +160261,6 @@ shukrancoin.net
 shukrancoin.pro
 shuldo.wixsite.com
 shulkerv2.xyz
-shultectise.xa5ttg.info
 shumaker.info
 shumgor.site
 shun32.cn
@@ -160508,7 +160492,6 @@ sign-gate.iconoguroque.in.net
 sign-in-mailbox-edc51f-83c8q77c-d159-4a60f031dfa-b62a.vercel.app
 sign-in-myjuno-account.weeblysite.com
 sign-in-op-token.com
-sign-in-to-xfinity-090.weebly.com
 sign-in-to-xfinity-101765.weebly.com
 sign-in-to-xfinity-10199.weebly.com
 sign-in-to-xfinity-1053.weebly.com
@@ -164295,6 +164278,7 @@ socolivez.co
 socolivez.io
 socolivez12.live
 socolivezac.tv
+socolivezad.tv
 socolivezc.top
 socolivezca.com
 socoliveze.tv
@@ -168072,7 +168056,6 @@ sslserver1.sviluppo.host
 sslug.cn
 sslwebx23c.sviluppo.host
 sslwindows.com
-ssmail.ink
 ssmsshop.in
 ssmsshop.in.net
 ssmtrustindia.com
@@ -169360,6 +169343,7 @@ starflugel.com
 starfmnyc.com
 starforged.ru
 stargate-finance-v2.io
+stargate.viewdns.net
 stargatecafe.com
 stargatefinance.at
 stargatefinance.org
@@ -173498,6 +173482,7 @@ suntrust-kansai.com
 sunuf.co.za
 sunumofisi.com
 sunus.site
+sunvallen-jp.com
 sunvalleydesign.com
 sunveilguild.digital
 sunvi.org
@@ -177970,7 +177955,6 @@ tazhhy.com
 tazunoprime.com
 tazze.co
 tb-facebook.blogspot.com
-tb.rilobreeze.com
 tb8jgv.sbs
 tb915hdh89.mfs.gg
 tbaytelcommunications.weebly.com
@@ -178183,7 +178167,6 @@ tdzer.com
 te-lovendo.com
 te-mailbox.fun
 te-storg.com
-te.cyraecraft.com
 te1sewebmails45-signon.web.app
 te5l.a6x5w0r2.work
 te6f.foofousa.sa.com
@@ -194041,6 +194024,7 @@ update.centos-yum.com
 update.cracktoolz.com
 update.devicebug.com
 update.dip.vn
+update.getcloudtime.com
 update.javashell.com
 update.jquerycloud.io
 update.microsoft-edges.com
@@ -201356,6 +201340,7 @@ vinted.wnsls.com
 vinted.xrock3671et5k.mom
 vinted.zo2j93ai6l09pu.rest
 vinted432342.com
+vinted4333322.com
 vinted5333322.com
 vinted7653322.com
 vinted8699.sellon.help
@@ -201984,7 +201969,6 @@ vitranexima.live
 vitranexima.net
 vitranexima.shop
 vitraneximaai.com
-vitrincebin-jprakutansui.com
 vitrisbron.online
 vittiqueen.autos
 vittoriagrowth-shop.pages.dev
@@ -203456,6 +203440,7 @@ vspec.lol
 vsport.info
 vssacationer.info
 vssipette.cyou
+vssitalistic.info
 vsssl.com
 vsssobverpss-ca.top
 vstcrackmac.com
@@ -208579,6 +208564,7 @@ wifc.space
 wifc.website
 wifeplasterbakewis.shop
 wifi-ber.com
+wifi-dengen.com
 wifi-dr.com
 wifi-guardian.com
 wifi-passwd.com
@@ -208832,9 +208818,14 @@ win32.agent.aznd
 win32.agent.bhin
 win32.agent.bjev
 win32.agent.caq
+win32.agent.cesz
 win32.agent.cjxg
 win32.agent.cp
+win32.agent.cru
+win32.agent.cwpw
+win32.agent.cwpx
 win32.agent.dchs
+win32.agent.dx
 win32.agent.grfc
 win32.agent.grft
 win32.agent.grgy
@@ -208842,15 +208833,66 @@ win32.agent.huwx
 win32.agent.ifdx
 win32.agent.ikhw
 win32.agent.neruhv
+win32.agent.nevarj
 win32.agent.nevpig
 win32.agent.nevrdq
 win32.agent.nevvdu
+win32.agent.nevwjk
+win32.agent.newcnv
+win32.agent.newuhg
 win32.agent.nexivm
+win32.agent.neydls
+win32.agent.nezphw
+win32.agent.nfblag
+win32.agent.nfblew
 win32.agent.nfborw
+win32.agent.nl
 win32.agent.nw
+win32.agent.pj
+win32.agent.puho
+win32.agent.pwbm
+win32.agent.qqvp
+win32.agent.qrdh
+win32.agent.qwfjil
+win32.agent.qwgdov
+win32.agent.qwggrx
+win32.agent.qwggut
+win32.agent.qwgitj
+win32.agent.qwgmad
+win32.agent.qwgmfk
+win32.agent.qwgnhb
+win32.agent.qwgnva
+win32.agent.qwgogj
+win32.agent.qwgvyp
+win32.agent.qwhapa
+win32.agent.qwhejy
+win32.agent.qwhfdd
+win32.agent.qwhomq
+win32.agent.qwhqhu
+win32.agent.qwhtkh
 win32.agent.qwhvrr
 win32.agent.td
+win32.agent.tljq
+win32.agent.tulj
+win32.agent.twgm
+win32.agent.umrb
+win32.agent.uwue
+win32.agent.uxpi
+win32.agent.uzrp
+win32.agent.vefb
+win32.agent.vjsv
+win32.agent.vrmo
+win32.agent.xeby
+win32.agent.xjgj
+win32.agent.xsde
+win32.agent.yzib
+win32.agent.yzpo
+win32.agent.zmpq
+win32.agent.znbq
 win32.agent.znrg
+win32.agent.zrto
+win32.agent2.chuf
+win32.agent2.cnfx
 win32.agent2.ddor
 win32.agent2.evxs
 win32.agent2.evxv
@@ -209207,6 +209249,7 @@ win32.scar.onhj
 win32.scar.oniz
 win32.scar.qbpt
 win32.sefnit
+win32.shakblades.qmn
 win32.shakblades.whr
 win32.shellcode.iuk
 win32.shiz.encf
@@ -209327,6 +209370,7 @@ win32.vobfus.efsv
 win32.vobfus.erjm
 win32.vobfus.erym
 win32.vobfus.eryt
+win32.vobfus.etzm
 win32.vobfus.exgh
 win32.vobfus.exgy
 win32.vobfus.rku
@@ -209335,9 +209379,11 @@ win32.vocar.bp
 win32.wabot
 win32.waldek.jgc
 win32.waldek.pts
+win32.warpigs
 win32.wbna.apa
 win32.wbna.bul
 win32.wbna.ipa
+win32.wbna.nxq
 win32.wbna.qt
 win32.wbna.roc
 win32.xtrat.xqz
@@ -210067,6 +210113,7 @@ wnetralia.shop
 wnetrano.shop
 wnetrava.shop
 wnetravax.shop
+wnetravelo.shop
 wnetravia.shop
 wnetravio.shop
 wnetravo.shop
@@ -214604,7 +214651,6 @@ xn--12coi1d2ea5cvf.com
 xn--1388889-f76mt15z.lol
 xn--15tp58axzgrvi.com
 xn--2o2bo1am34d.weebly.com
-xn--38j8b560qz6d6qa93nq89c.zip
 xn--5h5b30a7g9shrk92d.weebly.com
 xn--80aaae9btead2a.xn
 xn--80aafzuww.xn--p1ai
@@ -215069,6 +215115,7 @@ xoilaclinkhd1.tv
 xoilaclinkhd2.tv
 xoilaclinkhd4.tv
 xoilaclinkhd6.tv
+xoilaclinkhd8.tv
 xoilaclinkwc2026.tv
 xoilaclive-affcup2026.live
 xoilaclive-worldcup2026a.tv
@@ -219903,7 +219950,6 @@ zfgjg.com
 zfgt.shop
 zfilesharouts.one
 zfk08it31591131lm.shop
-zfkmasinac.com
 zfkrq1055kalklxmvox.peou.de
 zfn-whatsapp.com
 zfnch.com
@@ -219994,7 +220040,6 @@ zhalds.shop
 zhalikerdurtrx.net
 zhalverdukai.com
 zhalverduktrade.com
-zhangyexin-jprakutansui.com
 zhangyexinx-jp.com
 zhangyumo.top
 zhanjijiancai.com
@@ -220569,7 +220614,6 @@ zlatylevtrade.com
 zlbnpo.cn
 zlbzlb.top
 zldtykw.ru
-zledu-sx.oss-cn-beijing.aliyuncs.com
 zlfeelost.eu.cc
 zlg.tid.mybluehost.me
 zlgbgfnebrnn.com
@@ -220807,6 +220851,7 @@ zolontrixfin.org
 zolotayapodkovka.ru
 zolotko.pages.dev
 zolotongo7.pages.dev
+zolotoy.club
 zolpek.shop
 zolpix.info
 zoltarenvirelia.net
